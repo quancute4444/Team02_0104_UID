@@ -1,0 +1,44 @@
+/* -- Imported styles ----------------------------- */
+@import url("global.css");
+@import url("box.css");
+@import url("ck_style.css");
+div#vnt-main>.newsTitle h1 {  padding-right: 0%;}
+
+
+.menuOTher .wrapper .box_mid .mid-title .titleL h2 {
+  display: none;}
+.formSystem .title-system {
+  display: none;}
+@media screen and (min-width: 991px) {form>.gridF .col3 {
+  width: 26.9%;}}
+@media (max-width: 991px) {.gridF .col1 {
+  display: none;}}
+.aboutWrap .captionWrap {
+  display: none;}
+.aboutWrap .img img {
+  height: auto !important;
+  width: 100%;}
+.mnfixed_wrap {
+  display: none;}
+.formPopup button {
+  width: 100px !important;}
+@media screen and (min-width: 991px){.aboutWrap {
+  margin-top: -200px;
+  z-index: -300;}}
+@media (min-width: 1200px){
+  div#vnt-news>.wrapper>.mod-content.row>div#vnt-main.col-lg-8 {
+    width: 100%;
+  }}
+ul.lit1 .timeopen {
+  display: none;}
+
+
+
+
+.zalo-share-button {
+  line-height: 20px;
+  padding: 4px 10px 4px 40px;
+  background: url(../images/icon_zalo.png) #008fe5 no-repeat 5px;
+  cursor: pointer;
+  color: #fff;
+}

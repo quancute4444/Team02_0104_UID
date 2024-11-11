@@ -1,0 +1,243 @@
+#vnt-content .menu:nth-child(odd) .caption{
+  float: left;
+}
+#vnt-content .menu:nth-child(odd) .imgCat{
+  float: right;
+  text-align: right;
+}
+#vnt-content .menu:nth-child(even) .caption{
+  float: right;
+  text-align: right;
+}
+#vnt-content .menu:nth-child(even) .imgCat{
+  float: left;
+  text-align: left;
+}
+.menu{
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 340px;
+}
+.menu:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.menu .wrapper,
+.menu .caption,
+.menu .tend,
+.menu .des,
+.menu .link{
+  color:inherit;
+  border-color:inherit;
+}
+.menu .caption{
+  width: 50%;
+}
+.menu .tend{
+  margin-bottom: 20px;
+}
+.menu .tend a{
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color:inherit;
+  display: block;
+  font-family: 'fontkhachhang';
+  font-weight: normal !important;
+}
+.menu .tend a:hover{
+  color:#b22830 !important;
+}
+.menu .des{
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.menu .link a {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  color: inherit;
+  border: solid 1px #ffffff;
+  border-color: inherit;
+  padding: 7px 70px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background: transparent;
+}
+.menu .link a:hover{
+  background: #b22830 !important;
+  border-color: #b22830 !important;
+  color:#ffffff !important;
+}
+.menu .imgWrap{
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+.menu .imgCat{
+  pointer-events: auto;
+  width: 50%;
+}
+.menu .imgCat img {
+  max-height: 400px;
+}
+.linkM a {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b22830;
+  border: solid 1px #b22830;
+  padding: 7px 70px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.linkM a:hover{
+  background: #b22830;
+  color:#ffffff;
+  border-color: #b22830;
+}
+/*===============================================*/
+.menuBoxMid {
+  padding: 45px 0;
+  background: #fbedd7;
+}
+.the-content{
+  font-size: 15px;
+  line-height: 23px;
+  color:#53382c;
+  margin-bottom: 25px;
+}
+.itemMenu{
+  margin-bottom: 30px;
+}
+.itemMenu:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.itemMenu .img{
+  width: 150px;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.itemMenu .img img{
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  backface-visibility: hidden;
+}
+.itemMenu .img:hover img{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.itemMenu .caption{
+  overflow: hidden;
+}
+.itemMenu .tend{
+  margin-bottom: 10px;
+}
+.itemMenu .tend a{
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: normal;
+  color:#53382c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  font-family: 'fontkhachhang';
+  font-weight: normal !important;
+}
+.itemMenu .tend a:hover{
+  color:#f14a50;
+}
+.itemMenu .des{
+  font-size: 15px;
+  line-height: 23px;
+  max-height: 69px;
+}
+
+
+
+
+/*==========================================================================*/
+/*============================RESPONSIVE====================================*/
+/*==========================================================================*/
+@media all and (max-width: 991px){
+  .menu.v1{
+    padding: 30px 0px 40px;
+  }
+  .menu.v2{
+    padding: 30px 0px 40px;
+  }
+  .menu.v3{
+    padding: 30px 0px 40px;
+  }
+  .menu .imgWrap{
+    position: initial;
+    -webkit-transform: initial;
+    -ms-transform: initial;
+    -o-transform: initial;
+    transform: initial;
+  }
+  .menu .imgCat{
+    float: none !important;
+    width: 100%;
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+  .menu .imgCat img{
+    max-width: 100%;
+  }
+  .menu .caption{
+    width: 100%;
+  }
+  .menu .tend a{
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .menu .des{
+    font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  .menuBoxMid{
+    padding: 20px 0;
+  }
+  .menuOTher{
+    padding: 25px 0 35px;
+  }
+
+}
+
+@media all and (max-width: 768px){
+  .gridP .col{
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 460px){
+
+}
+
+@media all and (max-width: 360px){
+  .itemMenu .img{
+    width: 100px;
+  }
+}
